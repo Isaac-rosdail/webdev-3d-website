@@ -1,0 +1,246 @@
+
+/* Styles for the page: linear-gradient from grey to white, starting with 0 margins/padding */
+* {
+    margin: 0;
+    padding: 0;
+}
+html {
+    background-image: linear-gradient(to top, grey, white);
+    background-attachment: fixed;
+}
+
+/* Styles for the body: Primary Arial font w/ white background, auto-centering */
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: white;
+    width: 98%;
+    max-width: 960px;
+    margin: 0 auto;
+    border: solid;
+    border-radius: 20px;
+    box-shadow: 20px 20px 200px grey;
+}
+
+/* Link Styles on Focus/Hover */
+a:focus, a:hover {
+    color: white;
+    background-color: rgb(145, 230, 250);
+}
+
+/* Link Styles */
+a:link {
+    text-decoration: none; /* Removes underline */
+    padding: 10px 1.05%;
+    margin-bottom: 10px;
+    display: block; /* Gives physical border to separate 'boxes' */
+    background-color: skyblue; /* Color box around text*/
+    border: solid; /* Solid border to links */
+
+}
+
+/* ABOVE NAV MENU */
+/* Styles for the header: Padding for formatting, solid border underneath */
+header {
+    padding-left: 1.05%;
+    border-bottom: solid;
+}
+
+header h1 {
+    font-size: 2.5em;
+}
+
+header h1, header h2 {
+    color: royalblue;
+}
+
+/* Padding to space border underneath header h2 */
+header h2 {
+    padding-bottom: 25px;
+}
+
+/* Floats image to left, padding so it's not against the border */
+header img {
+    float: left;
+    padding-right: 1.05%;
+    border-radius: 10px;
+}
+
+/* Navigation List Styles */
+nav ul {
+    display: flex;
+    flex-basis: 100%;
+    justify-content: space-between;
+}
+nav ul li {
+    list-style-type: none;
+    text-align: center;
+    flex-basis: 25%;
+}
+nav:focus, nav:hover {
+    /*background-color: skyblue;*/
+    color: darkblue;
+}
+nav .current {
+    background-color: #0056d6;
+    color: white;
+}
+
+/* Main Styles, left/right padding */
+main {
+    display: flex;
+    padding: 0 2.1% 0;
+}
+
+/* Increases first letter size of h2 */
+main h2:first-child::first-letter {
+    font-size: 1.5em;
+}
+main h3 {
+    padding: 10px 0 5px;
+}
+
+section {
+    flex-basis: 65%;
+    order: 2;
+    padding: 0 1.56% 0;
+}
+
+table {
+    padding: 0 5% 0 5%;
+    border-collapse: collapse;
+}
+table caption {
+    text-align: center;
+    font-weight: bold;
+    font-size: 1.5em;
+    padding-bottom: 10px;
+}
+thead tr th {
+    background-color: skyblue;
+    color: royalblue;
+}
+td:last-child {
+    text-align: right;
+}
+td, th {
+    padding: .2em .6em .2em;
+}
+
+/* Styles for Picture & Caption on "About" Page*/
+figure {
+    float: left;
+    max-width: 60%;
+    min-width: 150px;
+}
+figure figcaption {
+    display: block;
+    font-weight: bold;
+    font-size: 1.5em;
+    padding-bottom: 0.5em;
+}
+
+/* Aside Styles */
+aside {
+    flex-basis: 35%;
+    order: 1;
+}
+aside ul li{
+    width: 98%;
+    list-style-type: none;
+}
+
+/* Styles for Form */
+fieldset {
+    margin-bottom: 0.5em;
+    padding: .5em 1em;
+}
+legend { /* "Please enter the following:" and "Submit Your Complaints" */
+    font-weight: bold;
+    font-size: 85%;
+    padding-bottom: .5em;
+}
+label, input, select {
+    font-size: 90%;
+}
+label {
+    float: left;
+    width: 10em;
+    text-align: right;
+}
+input, select {
+    width: 15em;
+    margin-left: 0.5em;
+    margin-bottom: 0.5em;
+}
+
+/* Footer Styles */
+footer {
+    background-color: deepskyblue;
+    border-top: solid;
+    border-bottom-left-radius: 16px; /* Rounded corners left */
+    border-bottom-right-radius: 16px; /* Rounded corners right*/
+    overflow: hidden; /* Ensure background color reaches bottom of footer */
+    clear: both;
+}
+footer p {
+    text-align: center;
+    font-size: 0.8em;
+    padding: 1em 0 1em;
+}
+
+#buttons input{
+    width: 10em;
+}
+/* Hide mobile menu */
+#mobile_menu {
+    display: none;
+}
+
+@media only screen and (max-width: 767px) {
+
+    header {
+        text-align: center;
+    }
+    header img {
+        float: none;
+    }
+    header h1, h2 {
+        padding: 0;
+    }
+
+    main {
+        flex-direction: column; /* Stacks vertically */
+    }
+
+    section {
+        width: 95%;
+        order: 1;
+    }
+
+    aside {
+        width: 95%;
+        order: 2;
+        margin: 0 auto;
+        align-content: center;
+    }
+    aside ul li {
+        text-align: center;
+    }
+
+    #nav_menu {
+        display: none;
+    }
+    #mobile_menu {
+        display: block;
+    }
+    .slicknav_menu {
+        background-color: skyblue !important;
+    }
+}
+
+@media only screen and (max-width: 479px) {
+
+    body {
+        font-size: 85%;
+    }
+}

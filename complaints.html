@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Rosdail - Lab 5 Complaints</title>
+    <link rel="icon" href="images/3d.png">
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/slicknav.css">
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script src="js/jquery.slicknav.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $("#nav_menu").slicknav({ prependTo: "#mobile_menu"});
+        })
+    </script>
+</head>
+<body>
+    <header>
+        <img src="images/amazingbenchyhuge.jpg" alt="Gorgeous Benchy Example">
+        <h1>Isaac's Excellent Guide to Improving Your 3D Prints</h1>
+        <h2>This was only my 3<sup>rd</sup> print!</h2>
+    </header>
+    <nav id="mobile_menu"></nav>
+    <nav id="nav_menu">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="printercomparisons.html">Printer Comparisons</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a class="current" href="complaints.html">Complaints?</a></li>
+        </ul>
+    </nav>
+    <main>
+        <section>
+            <h2> Have Any Gripes and Complaints? I Love Those!</h2>
+            <form action="confirm.html" method="get"
+                  name="complaints_form" id="complaints_form">
+                <fieldset>
+                    <legend>Please enter the following:</legend>
+                    <label for="first_Name">First Name:</label>
+                    <input type="text" name="first_Name" id="first_Name" autofocus required><br>
+                    <label for="last_Name">Last Name:</label>
+                    <input type="text" name="last_Name" id="last_Name" required><br>
+                    <label for="email">Email:</label>
+                    <input type="email" name="email" id="email" required><br>
+                    <label for="phone">Phone:</label>
+                    <input type="tel" name="phone" id="phone" placeholder="999-999-9999"
+                           pattern="\d{3}[\-]\d{3}[\-]\d{4}" title="Must be 999-999-9999 format" ><br>
+                </fieldset>
+                <fieldset id="buttons">
+                    <legend>Submit Your Complaints</legend>
+                    <label>&nbsp;</label>
+                    <input type="submit" id="submit" value="Submit Email">
+                    <input type="reset" id="reset" value="Reset Fields">
+                </fieldset>
+            </form>
+        </section>
+        <aside>
+            <ul>
+                <li><a href="https://filament2print.com/gb/blog/76_importance-layer-fan.html" target="_blank">Parts Cooling Fan speeds too low</a></li>
+                <li><a href="https://all3dp.com/2/extrusion-multiplier-cura-ways-to-improve-your-prints/" target="_blank">Excessive Extrusion Rate</a></li>
+                <li><a href="https://www.youtube.com/watch?v=EAG_538k_bM" target="_blank">Excessively High Nozzle Temp</a></li>
+                <li><a href="https://www.reddit.com/r/3Dprinting/comments/w7o1pa/stop_recommending_creality_machines_blindly/" target="_blank">Possible Creality Product</a></li>
+            </ul>
+        </aside>
+    </main>
+    <footer>
+        <p>&#169; 2022 Isaac Rosdail</p>
+    </footer>
+</body>
+</html>

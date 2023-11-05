@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Rosdail - Lab 5 Home</title>
+    <link rel="icon" href="images/3d.png">
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/slicknav.css">
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script src="js/jquery.slicknav.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $("#nav_menu").slicknav({ prependTo: "#mobile_menu"});
+        })
+    </script>
+
+</head>
+<body>
+    <header>
+        <img src="images/amazingbenchyhuge.jpg" alt="Gorgeous Benchy Example">
+        <h1>Isaac's Excellent Guide to Improving Your 3D Prints</h1>
+        <h2>This was only my 3<sup>rd</sup> print!</h2>
+    </header>
+    <nav id="mobile_menu"></nav>
+    <nav id="nav_menu">
+        <ul>
+            <li><a class="current" href="index.html">Home</a></li>
+            <li><a href="printercomparisons.html">Printer Comparisons</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="complaints.html">Complaints?</a></li>
+        </ul>
+    </nav>
+    <main>
+        <section>
+            <h2>A Fine Example for What Can Go Wrong</h2>
+            <p>I've only been 3D printing for a month or so now, but I created this site to help others avoid these same aggravating
+                problems I've run into myself. 3D printing can be almost as infuriating as it is incredible. <em>Practical</em>
+                designs (or decorative!) can be dreamt up and breathed into existence, but only with the patience to suffer
+                through the headache of troubleshooting the many things that can go wrong, or be improperly tuned. Clearly
+                something went seriously wrong here with this poor guy here. As to what in particular that is, I'm not quite so
+                sure, but as a fake journalist, my job here is to speak authoritatively about topics I don't fully
+                understand. And as a lazy fake journalist, I'll just provide links to the following potential issues.</p>
+
+            <h3>I Wish You All the Best of Luck!</h3>
+            <p>Hopefully at least some of the info gathered in these articles helps you tune your printer to
+                prevent masterpieces such as the one here. 3D printing <strong>(especially if you fell prey to reason 4)</strong> can
+                be a <em>frustrating</em> process of trial and error. However, the results you can get from proper tuning, solid
+                model design, and some patience are really outstanding, especially considering it's all done from the comfort
+                of your own home (or shed, if you've got a smelly resin printer).</p>
+        </section>
+        <aside>
+            <ul>
+                <li><a href="https://filament2print.com/gb/blog/76_importance-layer-fan.html" target="_blank">Parts Cooling Fan speeds too low</a></li>
+                <li><a href="https://all3dp.com/2/extrusion-multiplier-cura-ways-to-improve-your-prints/" target="_blank">Excessive Extrusion Rate</a></li>
+                <li><a href="https://www.youtube.com/watch?v=EAG_538k_bM" target="_blank">Excessively High Nozzle Temp</a></li>
+                <li><a href="https://www.reddit.com/r/3Dprinting/comments/w7o1pa/stop_recommending_creality_machines_blindly/" target="_blank">Possible Creality Product</a></li>
+            </ul>
+        </aside>
+    </main>
+    <footer>
+        <p>&#169; 2022 Isaac Rosdail</p>
+    </footer>
+</body>
+</html>

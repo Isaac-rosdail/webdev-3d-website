@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Rosdail - Lab 5 Confirm</title>
+    <link rel="icon" href="images/3d.png">
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/slicknav.css">
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script src="js/jquery.slicknav.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $("#nav_menu").slicknav({ prependTo: "#mobile_menu"});
+        })
+    </script>
+</head>
+<body>
+    <header>
+    <img src="images/amazingbenchyhuge.jpg" alt="Gorgeous Benchy Example">
+    <h1>Isaac's Excellent Guide to Improving Your 3D Prints</h1>
+    <h2>This was only my 3<sup>rd</sup> print!</h2>
+    </header>
+    <nav id="mobile_menu"></nav>
+    <nav id="nav_menu">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="printercomparisons.html">Printer Comparisons</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="complaints.html">Complaints?</a></li>
+        </ul>
+    </nav>
+    <main>
+    <section>
+        <h2>Success</h2>
+        <p>We look forward to your eloquently-worded and profanity-free complaint! In the meantime, please check out our
+        other pages.</p>
+    </section>
+        <aside>
+            <ul>
+                <li><a href="https://filament2print.com/gb/blog/76_importance-layer-fan.html" target="_blank">Parts Cooling Fan speeds too low</a></li>
+                <li><a href="https://all3dp.com/2/extrusion-multiplier-cura-ways-to-improve-your-prints/" target="_blank">Excessive Extrusion Rate</a></li>
+                <li><a href="https://www.youtube.com/watch?v=EAG_538k_bM" target="_blank">Excessively High Nozzle Temp</a></li>
+                <li><a href="https://www.reddit.com/r/3Dprinting/comments/w7o1pa/stop_recommending_creality_machines_blindly/" target="_blank">Possible Creality Product</a></li>
+            </ul>
+        </aside>
+    </main>
+</body>
+</html>
