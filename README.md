@@ -1,4 +1,4 @@
-# 3D Printing Introduction
+# 3D Printing Website
 A beginner's introduction website to 3D printing created as part of a web development class.
 
 # 3D Printing Website (Web Dev Class Project)
