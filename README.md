@@ -1,7 +1,8 @@
-# webdev-3Dsite
+# 3D Printing Introduction
+A beginner's introduction website to 3D printing created as part of a web development class.
 
-# 3D Printing Website (WebDev Class Project)
-This is a class project created to demonstrate web development skills. The website focuses on the topic of 3D printing, featuring an overview of the technology, its applications, and benefits. The site is fully responsive and designed with accessibility in mind.
+# 3D Printing Website (Web Dev Class Project)
+The website focuses on the topic of 3D printing, featuring an overview of the technology, its applications, and benefits.
 
 # Features
 - Informational pages about 3D printing.
